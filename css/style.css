@@ -192,6 +192,7 @@ textarea {
   max-height: 120rem;
   position: relative;
 }
+
 @media only screen and (max-width: 37.5em) {
   .home-hero {
     height: unset;
@@ -200,18 +201,15 @@ textarea {
 }
 .home-hero__socials {
   display: flex;
-  gap: 0.1rem; /* Decreased gap to bring items closer */
+  gap: 0.5rem; /* Adjusted gap between icons */
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .home-hero__socials--horizontal {
-  position: static;
-  transform: none;
-  border: none;
   display: flex;
   justify-content: center;
-  width: auto;
+  align-items: center;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -238,17 +236,18 @@ textarea {
 }
 
 .home-hero__social-icon-link {
-  width: 100%;
-  display: block;
-  padding: 0.2rem; /* Reduced padding */
+  display: inline-block;
+  padding: 0.2rem; /* Adjusted padding */
   transition: background .3s;
 }
 
 .home-hero__social-icon-link:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+
 .home-hero__social-icon {
-  width: 10%;
+  width: 30px; /* Adjusted width of icons */
+  height: auto;
 }
 .home-hero__content {
   position: absolute;
@@ -518,6 +517,42 @@ textarea {
       @media only screen and (max-width: 37.5em) {
         .project-details__links-btn:last-child {
           margin: 0; } }
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Adjust the gap between grid items */
+}
+
+.projects__item {
+  background-color: #fff; /* Example background color */
+  padding: 1.5rem; /* Example padding */
+  border-radius: 8px; /* Example border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+
+.projects__row-img-cont {
+  max-width: 100%;
+}
+
+.projects__row-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects__row-content {
+  padding: 1rem;
+}
+
+.projects__row-content-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects__row-content-desc {
+  margin-bottom: 1rem;
+}
+          
 
 .header {
   position: fixed;
