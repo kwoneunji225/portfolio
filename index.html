@@ -38,6 +38,9 @@
               <a href="./index.html#about" class="header__link">About </a>
             </li>
             <li class="header__link-wrapper">
+              <a href="./index.html#work-experience" class="header__link">Experience </a>
+            </li>
+            <li class="header__link-wrapper">
               <a href="./index.html#projects" class="header__link">
                 Projects
               </a>
@@ -69,6 +72,10 @@
 
             <li class="header__sm-menu-link">
               <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#work-experience"> Experience </a>
             </li>
 
             <li class="header__sm-menu-link">
@@ -173,6 +180,47 @@
         </div>
       </div>
     </section>
+    <section id="work-experience" class="work-experience sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Work Experience</span>
+          <span class="heading-sec__sub">
+            Here are some of the places I've worked and what I've accomplished there.
+          </span>
+        </h2>
+    
+        <div class="work-experience__list">
+          <div class="work-experience__item" onclick="toggleDescription(this)">
+            <div class="work-experience__header">
+              <span class="company-name">Company A</span>
+              <span class="years">2018 - 2021</span>
+            </div>
+            <div class="work-experience__description">
+              <p>Worked on developing web applications and improving user experience.</p>
+            </div>
+          </div>
+    
+          <div class="work-experience__item" onclick="toggleDescription(this)">
+            <div class="work-experience__header">
+              <span class="company-name">Company B</span>
+              <span class="years">2021 - Present</span>
+            </div>
+            <div class="work-experience__description">
+              <p>Leading a team of developers to create innovative software solutions.</p>
+            </div>
+          </div>
+          
+          <!-- Add more work experience items as needed -->
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleDescription(element) {
+        element.classList.toggle('active');
+      }
+      
+    </script>
+    
     <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">

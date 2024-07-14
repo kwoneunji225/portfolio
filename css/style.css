@@ -272,7 +272,7 @@ textarea {
   
 
 .about {
-  background: #fafafa; }
+  background: #ffffff; }
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -551,6 +551,49 @@ textarea {
 
 .projects__row-content-desc {
   margin-bottom: 1rem;
+}
+
+/* Work Experience Styles */
+
+.work-experience {
+  background-color: #ffffff; /* Add background color here */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.work-experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-experience__item {
+  border: 1px solid #02082c;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.work-experience__item:hover {
+  background-color: #cddbff;
+}
+
+.work-experience__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.work-experience__description {
+  font-size: medium;
+  margin-top: 10px;
+  display: none;
+}
+
+.work-experience__item.active .work-experience__description {
+  display: block;
 }
           
 
