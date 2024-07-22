@@ -230,15 +230,17 @@ textarea {
 }
 .home-hero__socials {
   display: flex;
-  gap: 0.5rem; /* Reduced gap between icons */
+  gap: 3rem; /* Reduced gap between icons */
   justify-content: center;
   margin-top: 2rem;
 }
 
 .home-hero__social-icon-link {
-  display: inline-block;
-  padding: 0.2rem; /* Adjusted padding */
-  transition: background .3s;
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
 }
 
 .home-hero__social-icon-link:hover {
@@ -270,6 +272,10 @@ textarea {
   max-width: 80rem;
 }
   
+.home-hero__social-text {
+  margin-top: 0.2rem; /* Space between icon and text */
+  font-size: 2rem; /* Adjust text size */
+}
 
 .about {
   background: #ffffff; }
